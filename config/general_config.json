@@ -1,0 +1,12 @@
+{
+    "ubuntu_resources_path": "/home/ubuntu/{project_name_path}/{project_name}_resources/",
+    "log_path": "/var/log/{project_name}_inbound_setup_validate_module",
+    "resources":"/common_resources/",
+    "setting": {
+        "prod": "config.settings.prod",
+        "dev": "config.settings.dev",
+        "base": "config.settings.base"
+    },
+
+    "debug":false
+}
