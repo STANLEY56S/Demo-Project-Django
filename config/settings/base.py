@@ -95,13 +95,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_DB', 'django_postgres_db'),
-        'USER': os.environ.get('POSTGRES_USER', 'postgres'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'SSSen12345'),
-        "HOST": os.getenv("DB_HOST", "django-postgres-db.c1s4oi4cczis.ap-south-1.rds.amazonaws.com"),  # 🔑 use service name, not localhost
-        "PORT": os.getenv("DB_PORT", "5432"),
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
