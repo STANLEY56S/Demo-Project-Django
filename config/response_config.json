@@ -1,0 +1,6 @@
+{
+    "SAVE_SUCCESSFULLY": {"code":1001,"message":"Data saved successfully."},
+    "UPDATE_SUCCESSFULLY": {"code":1002,"message":"Data updated successfully."},
+    "DELETE_SUCCESSFULLY": {"code":1003,"message":"Data deleted successfully."},
+    "IMPORT_SUCCESSFULLY": {"code":1004,"message":"Import successfully."}
+}
