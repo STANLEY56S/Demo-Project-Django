@@ -67,7 +67,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'my_app.middleware.handel_req_res.requestReponseMiddelWare',
+    'my_app.middleware.handel_req_res.requestResponseMiddleWare',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -184,22 +184,22 @@ SPECTACULAR_SETTINGS = {
 }
 
 
-LOGGING = {
-    "version": 1,
-    "disable_existing_loggers": False,
-    'handlers': {
-        'logtail': {
-            'class': 'logtail.LogtailHandler',
-            'source_token': 'x4NNVQ3Ta514MoLsjMqx84N9',
-            'host': 'https://s1523626.eu-nbg-2.betterstackdata.com',
-        },
-    },
-    "loggers": {
-        "": {
-            "handlers": [
-                "logtail",
-            ],
-            "level": "INFO",
-        },
-    },
-}
+# LOGGING = {
+#     "version": 1,
+#     "disable_existing_loggers": False,
+#     'handlers': {
+#         'logtail': {
+#             'class': 'logtail.LogtailHandler',
+#             'source_token': 'x4NNVQ3Ta514MoLsjMqx84N9',
+#             'host': 'https://s1523626.eu-nbg-2.betterstackdata.com',
+#         },
+#     },
+#     "loggers": {
+#         "": {
+#             "handlers": [
+#                 "logtail",
+#             ],
+#             "level": "INFO",
+#         },
+#     },
+# }
