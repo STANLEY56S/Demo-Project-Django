@@ -182,3 +182,24 @@ SPECTACULAR_SETTINGS = {
         }
     },
 }
+
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    'handlers': {
+        'logtail': {
+            'class': 'logtail.LogtailHandler',
+            'source_token': 'x4NNVQ3Ta514MoLsjMqx84N9',
+            'host': 'https://s1523626.eu-nbg-2.betterstackdata.com',
+        },
+    },
+    "loggers": {
+        "": {
+            "handlers": [
+                "logtail",
+            ],
+            "level": "INFO",
+        },
+    },
+}
