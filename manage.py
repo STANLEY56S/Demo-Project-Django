@@ -9,10 +9,6 @@ from dotenv import load_dotenv
 def main():
     """Run administrative tasks."""
     from common.common_utility import get_django_settings_path
-    BASE_DIR = Path(__file__).resolve().parent.parent
-
-    # load .env file
-    load_dotenv(BASE_DIR / ".env")
 
     # get the setting by check the prod dev
     django_settings_path = get_django_settings_path()
