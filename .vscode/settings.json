@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
         "asgi",
-        "Gunicorn"
+        "Gunicorn",
+        "VIEWSET",
+        "viewsets"
     ]
 }

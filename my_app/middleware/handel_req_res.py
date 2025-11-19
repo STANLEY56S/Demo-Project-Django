@@ -1,7 +1,7 @@
-import logging
+
 from datetime import datetime
 
-class requestReponseMiddelWare:
+class requestResponseMiddleWare:
 
     def __init__(self, get_response):
         self.get_response = get_response
@@ -14,15 +14,15 @@ class requestReponseMiddelWare:
         
         status = response.status_code
 
-        logging_messgae = "{} {} {} {}".format(
+        logging_message = "{} {} {} {}".format(
             current_datetime, method, path, status
         )
 
         if status >= 400:
-            print(logging_messgae)
+            print(logging_message)
         elif status >= 500:
-            print(logging_messgae)
+            print(logging_message)
         else:
-            print(logging_messgae)
+            print(logging_message)
 
         return response

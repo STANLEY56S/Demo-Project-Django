@@ -1,12 +1,16 @@
-from django.urls import path, include
-# from rest_framework import routers
+from rest_framework.routers import DefaultRouter
+from .views import (
+    AuthViewSet, CategoryViewSet, ItemViewSet,
+    SignupViewSet, LoginViewSet, LogoutViewSet, ChangePasswordViewSet
+)
 
-# Routers provide an easy way of automatically determining the URL conf.
-# router = routers.DefaultRouter()
-# router.register(r'users', )
+router = DefaultRouter()
+router.register("auth", AuthViewSet)
+router.register("category", CategoryViewSet)
+router.register("item", ItemViewSet)
+router.register("signup", SignupViewSet, basename="signup")
+router.register("login", LoginViewSet, basename="login")
+router.register("logout", LogoutViewSet, basename="logout")
+router.register("change-password", ChangePasswordViewSet, basename="change-password")
 
-urlpatterns = [
-    # path('', include(router.urls)),
-    # path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
-]
-
+urlpatterns = router.urls
