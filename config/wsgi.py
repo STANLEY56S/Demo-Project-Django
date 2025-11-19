@@ -14,7 +14,7 @@ from common.common_utility import get_django_settings_path
 
 # get the setting by check the prod dev
 django_settings_path = get_django_settings_path()
-print("django_settings_path ::: ",django_settings_path)
+# print("django_settings_path ::: --",django_settings_path)
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', django_settings_path)
 
 application = get_wsgi_application()
